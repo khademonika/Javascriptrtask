@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  class=" m-5 max-w-screen-sm mx-auto mt-9">
+    <a href="index.html" ><button class="bg-blue-950 text-white py-1 px-3 rounded-2xl mb-5 mx-5">Back</button></a><br>
+    <h1 class="text-2xl font-bold text-blue-950 mb-5 underline leading-8">Result Calcultor</h1>
+    <h2>Please Enter your Subject Number</h2>
+     <h3>Enter First Subject number <input id= "first"  class="border-2 border-current border-blue-100 rounded-xl px-3 mt-3 " required> </h3>
+     <h3>Enter Second Subject number <input id= "second"  class="border-2 border-current border-blue-100 rounded-xl px-3 mt-3 " required> </h3></h3>
+     <h3>Enter Third Subject number <input id= "third"  class="border-2 border-current border-blue-100 rounded-xl px-3 mt-3 " required> </h3></h3>
+     <h3>Enter Fourth Subject number <input id= "fourth"  class="border-2 border-current border-blue-100 rounded-xl px-3 mt-3 " required> </h3> </h3>
+     <h3>Enter Fivth Subject number <input id= "fivth"  class="border-2 border-current border-blue-100 rounded-xl px-3 mt-3 " required > </h3></h3>
+     <h1 id="result">Your Percentage is : </h1>
+    <button onclick="per()" class="bg-blue-950 text-white py-1 px-3 rounded-2xl mb-5 mx-5">click here</button>
+    <script>
+       function per(){
+        var first = parseInt(document.getElementById("first").value)
+        var second =parseInt( document.getElementById("second").value)
+        var third = parseInt( document.getElementById("third").value)
+        var fourth= parseInt(document.getElementById("fourth").value)
+        var fivth = parseInt(document.getElementById("fivth").value)
+        var total = first + second + third + fourth + fivth
+      var result = (total*100/500)
+      document.getElementById("result").innerHTML = "Your Percentage is :" +  result + "%"
+      first.value = ""
+      second.value = ""
+      
+     
+       }
+    </script>
+</body>
+</html>

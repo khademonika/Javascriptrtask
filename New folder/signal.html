@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" m-5 max-w-screen-sm mx-auto mt-9">
+    <a href="index.html"><button class="bg-blue-950 text-white py-1 px-3 rounded-2xl mb-5 mx-5">Back</button></a><br>
+    <div id="signal" style="height: 200px; border-radius: 50%; background-color: red; width: 200px;"></div>
+    <button id="one" onclick="go()" class="bg-red-950 text-white py-1 px-10 ml-5 mt-3 rounded-xl mb-5 mx-5">Go</button>
+
+    <script>
+        function go() {
+            var one = document.getElementById("one");
+            if (one.textContent === 'Go') {
+                one.textContent = "STOP";
+
+            }
+            else {
+                one.textContent = "GO";
+            }
+
+            var element = document.getElementById("signal");
+            if (element.style.backgroundColor === 'red') {
+                element.style.backgroundColor = "green";
+            } else {
+                element.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

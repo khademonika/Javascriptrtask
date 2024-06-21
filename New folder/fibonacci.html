@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-5 max-w-screen-sm mx-auto mt-9">
+    <a href="index.html"><button class="bg-blue-950 text-white py-1 px-3 rounded-2xl mb-5 mx-5">Back</button></a><br>
+    Enter a  Number <input type="text" id="num"  class="border-2 border-current border-blue-100 rounded-xl px-3 block">
+    <button onclick="fib()"  class="bg-blue-900 py-1 px-5 my-2 mr-3 text-white  rounded-2xl ">Click here</button>
+
+<script>
+   function fib(){
+    var no = document.getElementById("num").value
+    var a=0, b=1, next 
+    for(var i =0; i<=no; i++){
+        next= a+b
+        document.write("<br>" + next)
+        a = b
+        b = next
+    }
+   }
+</script>
+
+</body>
+</html>
